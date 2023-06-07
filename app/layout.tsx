@@ -26,6 +26,7 @@ export default function RootLayout({
           <Header />
           <Link href="/">Главное</Link>
           <Link href="/cinema">Кино</Link>
+          <Link href="/church">Храм</Link>
           {children}
         </div>
       </body>

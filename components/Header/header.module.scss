@@ -23,3 +23,7 @@
 .main {
   @include gradient_text(#099dff);
 }
+
+.church {
+  @include gradient_text(#0dd269);
+}
