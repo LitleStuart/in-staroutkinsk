@@ -2,7 +2,6 @@ import "../styles/globals.scss";
 import styles from "../styles/body-container.module.scss";
 import { Roboto } from "next/font/google";
 import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 import Link from "next/link";
 
 const roboto = Roboto({
@@ -25,6 +24,8 @@ export default function RootLayout({
       <body className={roboto.className}>
         <div className={styles.container}>
           <Header />
+          <Link href="/">Главное</Link>
+          <Link href="/cinema">Кино</Link>
           {children}
         </div>
       </body>
