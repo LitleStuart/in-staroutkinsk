@@ -1,0 +1,25 @@
+@use "sass:color";
+
+.subtitle {
+  span {
+    text-transform: uppercase;
+  }
+}
+
+@mixin gradient_text($color) {
+  background: linear-gradient(
+    40deg,
+    color.scale($color, $lightness: 20%),
+    color.scale($color, $lightness: -20%)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cinema {
+  @include gradient_text(#ff6b09);
+}
+
+.main {
+  @include gradient_text(#099dff);
+}
